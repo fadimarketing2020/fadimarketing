@@ -1,86 +1,281 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fadi Marketing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADI JAMAL | Digital Consultant & Meta Partner</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <style>
-    body{
-      margin:0;
-      font-family: Arial, sans-serif;
-      background:#0f172a;
-      color:white;
-      text-align:center;
-    }
-
-    .hero{
-      padding:60px 20px;
-    }
-
-    .hero img{
-      width:220px;
-      border-radius:20px;
-      box-shadow:0 0 25px rgba(0,0,0,0.5);
-    }
-
-    h1{
-      margin-top:20px;
-      font-size:38px;
-    }
-
-    p{
-      color:#cbd5e1;
-      font-size:18px;
-    }
-
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:15px;
-      padding:40px;
-    }
-
-    .gallery img{
-      width:100%;
-      border-radius:15px;
-      transition:0.3s;
-    }
-
-    .gallery img:hover{
-      transform:scale(1.05);
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:25px;
-      padding:12px 30px;
-      background:#22c55e;
-      color:white;
-      text-decoration:none;
-      border-radius:10px;
-    }
-  </style>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #0A0A0A; color: white; overflow-x: hidden; }
+        .font-english { font-family: 'Montserrat', sans-serif; }
+        .text-gold { color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.3s ease; }
+        .glass-panel:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-5px); }
+        .insta-gradient { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+    </style>
 </head>
+<body class="antialiased selection:bg-[#D4AF37] selection:text-black">
 
-<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/90 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex justify-between items-center transition-all duration-300">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#D4AF37] to-[#F3E5AB] p-[2px] shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                <div class="w-full h-full rounded-full bg-[#0A0A0A] flex items-center justify-center overflow-hidden">
+                    <i data-lucide="user" class="text-[#D4AF37] w-5 h-5"></i>
+                </div>
+            </div>
+            <div>
+                <span class="font-english font-black text-xl tracking-tighter block leading-none uppercase">FADI <span class="text-gold">JAMAL</span></span>
+                <span class="text-[9px] text-gray-500 tracking-[0.2em] font-bold uppercase">مستشار تسويق ونمو رقمي</span>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-8 text-[11px] font-bold text-gray-400">
+            <a href="#about" class="hover:text-gold transition-colors">عني</a>
+            <a href="#services" class="hover:text-gold transition-colors">الخدمات</a>
+            <a href="#work" class="hover:text-gold transition-colors">سابقة الأعمال</a>
+            <a href="#contact" class="hover:text-gold transition-colors">تواصل</a>
+        </div>
+        <a href="https://wa.me/201040118000" target="_blank" class="bg-gold text-black px-5 py-2 rounded-full text-xs font-bold hover:scale-105 transition-transform shadow-lg shadow-yellow-900/20">
+            تواصل معي
+        </a>
+    </nav>
 
-  <div class="hero">
-    <img src="images/profile.jpg">
-    <h1>Fadi Marketing</h1>
-    <p>Digital Marketing & Ads Specialist</p>
-    <a href="https://wa.me/201202453233" class="btn">تواصل واتساب</a>
-  </div>
+    <!-- Hero Section (Side-by-Side Layout) -->
+    <section class="relative pt-44 pb-24 px-6 min-h-screen flex items-center overflow-hidden">
+        <div class="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-gold/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center w-full">
+            
+            <!-- Text Content -->
+            <div class="md:col-span-7 lg:col-span-8 text-right order-2 md:order-1">
+                <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 px-4 py-2 rounded-full mb-6">
+                    <i data-lucide="badge-check" class="w-4 h-4 text-gold fill-gold"></i>
+                    <span class="text-gold text-[10px] font-black uppercase tracking-widest text-white">شريك رسمي لميتا - Meta Partner</span>
+                </div>
+                <h1 class="font-english text-5xl md:text-8xl font-black mb-6 leading-[0.9] tracking-tight text-white uppercase">
+                    FADI <span class="bg-clip-text text-transparent bg-gradient-to-l from-yellow-400 via-yellow-200 to-white italic">JAMAL</span>
+                </h1>
+                
+                <div class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl leading-relaxed font-medium space-y-4">
+                    <p>أهلاً بكم، أنا <strong>فادي جمال</strong>، مستشار نمو رقمي وشريك معتمد لميتا (Meta Partner). أساعد الشركات في الإمارات ومصر على تحويل ميزانياتها الإعلانية إلى عوائد ربحية قياسية من خلال استراتيجيات ميديا باير دقيقة وحلول تقنية تضمن استقرار الحسابات.</p>
+                    <p>بخبرة ممتدة في أسواق الخليج والقاهرة، أقدم لك مزيجاً نادراً بين "الإبداع البصري" و"الذكاء الرقمي". أنا هنا لأكون شريكك الاستراتيجي في رحلة النمو وتوثيق علامتك التجارية.</p>
+                </div>
 
-  <h2>أعمالي ونتائج الحملات</h2>
+                <div class="flex flex-wrap gap-4 justify-end">
+                    <div class="glass-panel px-6 py-4 rounded-[2rem] flex items-center gap-4 border border-gold/20">
+                        <div class="text-right">
+                            <div class="text-2xl font-black text-gold leading-none mb-1 uppercase font-english tracking-tighter">Direct Support</div>
+                            <div class="text-[9px] text-gray-500 uppercase font-bold tracking-widest">Meta Partner Edge</div>
+                        </div>
+                        <i data-lucide="headphones" class="text-gold w-6 h-6"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profile Image Area -->
+            <div class="md:col-span-5 lg:col-span-4 relative order-1 md:order-2">
+                <div class="relative aspect-square max-w-[420px] mx-auto">
+                    <div class="absolute inset-0 bg-gold rounded-[50px] blur-3xl opacity-10"></div>
+                    <div class="relative w-full h-full rounded-[50px] bg-[#111] border-2 border-gold/30 overflow-hidden shadow-2xl transform lg:-rotate-3 hover:rotate-0 transition-all duration-700">
+                        <!-- Replace with your actual photo me.jpg -->
+                        <img src="me.jpg" alt="Fadi Jamal" class="w-full h-full object-cover opacity-90" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="hidden flex-col items-center justify-center h-full bg-[#151515]">
+                            <i data-lucide="user" class="w-20 h-20 text-gray-800 mb-2"></i>
+                            <span class="text-gray-600 text-[10px] uppercase font-bold tracking-widest">me.jpg</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 right-6 text-right">
+                            <h4 class="text-2xl font-english font-black text-white uppercase tracking-widest leading-none">FADI JAMAL</h4>
+                            <p class="text-gold font-bold text-[10px] uppercase flex items-center gap-1 justify-end mt-2">
+                                Meta Partner <i data-lucide="badge-check" class="w-3 h-3 fill-gold text-black"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="gallery">
-    <img src="images/1.jpg">
-    <img src="images/2.jpg">
-    <img src="images/3.jpg">
-    <img src="images/4.jpg">
-    <img src="images/5.jpg">
-  </div>
+    <!-- Vision Section -->
+    <section id="about" class="py-24 px-6 bg-black text-center border-t border-white/5 relative">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-gold font-bold tracking-[0.4em] uppercase mb-10 text-[11px] italic">الرؤية المهنية | Vision</h3>
+            <p class="text-2xl md:text-4xl font-bold leading-relaxed text-gray-200">
+                "رؤيتي تتجاوز مجرد إدارة الحملات؛ أنا هنا لأكون شريك النمو الأول لعلامتك التجارية. أدمج بين الحلول التقنية المتقدمة كشريك لميتا وبين استراتيجيات التسويق المبتكرة لضمان استقرار أعمالك وتحقيق أعلى عائد استثمار ممكن."
+            </p>
+            <div class="h-[1px] w-48 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-16 opacity-30"></div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-6 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter uppercase">PREMIUM <span class="text-gold">SERVICES</span></h2>
+                <p class="text-gray-500 mt-6 font-bold uppercase tracking-widest">الخدمات الاستشارية المتكاملة</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-panel p-12 rounded-[4rem] text-right group">
+                    <i data-lucide="verified" class="w-12 h-12 text-gold mb-8"></i>
+                    <h4 class="text-2xl font-black mb-6 group-hover:text-gold transition-colors">شريك ميتا معتمد (Meta Partner)</h4>
+                    <p class="text-gray-500 font-bold leading-relaxed text-lg">حساب بارتنر رسمي وتأمين الحسابات الإعلانية وفك الحظر والتعامل مع الدعم المباشر لميتا.</p>
+                </div>
+                <div class="glass-panel p-12 rounded-[4rem] text-right group">
+                    <i data-lucide="bar-chart-3" class="w-12 h-12 text-gold mb-8"></i>
+                    <h4 class="text-2xl font-black mb-6 group-hover:text-gold transition-colors">خبير ميديا باير (Media Buying)</h4>
+                    <p class="text-gray-500 font-bold leading-relaxed text-lg">تصميم وإدارة حملات إعلانية متكاملة تهدف لتحقيق أفضل نتائج بيعية بأقل تكلفة (High ROAS).</p>
+                </div>
+                <div class="glass-panel p-12 rounded-[4rem] text-right group">
+                    <i data-lucide="map-pin" class="w-12 h-12 text-gold mb-8"></i>
+                    <h4 class="text-2xl font-black mb-6 group-hover:text-gold transition-colors">تطوير خرائط جوجل (Local SEO)</h4>
+                    <p class="text-gray-500 font-bold leading-relaxed text-lg">تحسين ظهور الشركات محلياً على الخرائط لضمان تصدر نتائج البحث وجذب العملاء القريبين.</p>
+                </div>
+                <div class="glass-panel p-12 rounded-[4rem] text-right group">
+                    <i data-lucide="layout" class="w-12 h-12 text-gold mb-8"></i>
+                    <h4 class="text-2xl font-black mb-6 group-hover:text-gold transition-colors">تصميم ويب سايت (Web Design)</h4>
+                    <p class="text-gray-500 font-bold leading-relaxed text-lg">بناء مواقع إلكترونية احترافية سريعة تتناسب مع هوية علامتك التجارية وتوفر أفضل تجربة مستخدم.</p>
+                </div>
+                <div class="glass-panel p-12 rounded-[4rem] text-right group">
+                    <i data-lucide="camera" class="w-12 h-12 text-gold mb-8"></i>
+                    <h4 class="text-2xl font-black mb-6 group-hover:text-gold transition-colors">صناعة المحتوى الإعلاني (Reels)</h4>
+                    <p class="text-gray-500 font-bold leading-relaxed text-lg">إخراج وتصوير فيديوهات قصيرة (ريلز) تركز على سرعة الانتشار وإقناع العميل بجودة المنتج.</p>
+                </div>
+                <div class="glass-panel p-12 rounded-[4rem] text-right group">
+                    <i data-lucide="globe" class="w-12 h-12 text-gold mb-8"></i>
+                    <h4 class="text-2xl font-black mb-6 group-hover:text-gold transition-colors">تحسين ظهور GEO (AI Search)</h4>
+                    <p class="text-gray-500 font-bold leading-relaxed text-lg">تهيئة نشاطك التجاري للظهور بقوة في محركات بحث الذكاء الاصطناعي والخرائط الجغرافية الذكية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (10 Projects with Icons) -->
+    <section id="work" class="py-32 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h3 class="text-gold font-bold mb-4 tracking-widest uppercase text-[11px]">شراكات نجاح عالمية</h3>
+                <h2 class="text-5xl md:text-7xl font-black underline decoration-gold underline-offset-[20px] text-white uppercase tracking-tighter">سابقة الأعمال</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Lovly Yacht -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="anchor" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase tracking-wider">Lovly Yacht</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إدارة ميديا باير وتطوير التواجد الرقمي <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- H Bella Clinic -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="sparkles" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">H Bella Clinic</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">زيادة الحجوزات وتطوير الهوية البصرية <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Speed Law -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="scale" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Speed Law</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">توثيق الحسابات وبناء المصداقية الرقمية <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- El Masria Foods -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="utensils" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">El Masria Foods</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">تصدر نتائج بحث جوجل مابس وإدارة المراجعات <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Mariam Clinic -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="stethoscope" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Mariam Clinic</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">صناعة محتوى تفاعلي وإدارة منصات التواصل <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Sara Salim Dress -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="scissors" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Sara Salim Dress</h4>
+                    <p class="text-gray-400 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إخراج فيديوهات ريلز وحملات ترويجية ناجحة <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Mountain View -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="building-2" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Mountain View</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">حملات Lead Generation وتصدر نتائج البحث <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Buffalo Burger -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="utensils-crossed" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Buffalo Burger</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إدارة حملات سوشيال ميديا وزيادة المبيعات <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Town Team -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="shopping-bag" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Town Team</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إنتاج محتوى إعلاني وتحقيق مبيعات أونلاين <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+                <!-- Raya Corp -->
+                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
+                    <i data-lucide="cpu" class="w-8 h-8 text-gold mb-6"></i>
+                    <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Raya Corp</h4>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">توثيق الهوية الرقمية وحلول تقنية للشركات <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-44 px-6 bg-black text-center relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gold/5 blur-[250px] -z-10"></div>
+        <div class="max-w-4xl mx-auto text-white">
+            <div class="w-36 h-36 rounded-full bg-gradient-to-tr from-gold to-white p-[3px] mx-auto mb-16 shadow-[0_0_80px_rgba(212,175,55,0.4)]">
+                <div class="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
+                    <i data-lucide="user" class="text-gold w-16 h-14 opacity-20"></i>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-24">
+                <!-- WhatsApp - Official Green -->
+                <a href="https://wa.me/201040118000" target="_blank" class="group flex items-center gap-4 bg-[#25D366] text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-green-900/20">
+                    <span>WhatsApp</span>
+                    <i data-lucide="phone" class="w-7 h-7"></i>
+                </a>
+                
+                <!-- Facebook - Official Blue -->
+                <a href="https://facebook.com/fadi.premium.media" target="_blank" class="group flex items-center gap-4 bg-[#1877F2] text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-blue-900/20">
+                    <span>Facebook</span>
+                    <i data-lucide="facebook" class="w-7 h-7"></i>
+                </a>
+
+                <!-- Instagram - Official Gradient -->
+                <a href="https://www.instagram.com/fadipremium" target="_blank" class="group flex items-center gap-4 insta-gradient text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-pink-900/20">
+                    <span>Instagram</span>
+                    <i data-lucide="instagram" class="w-7 h-7"></i>
+                </a>
+            </div>
+
+            <div class="mt-48 pt-16 border-t border-white/5 text-gray-700 text-[11px] font-black uppercase tracking-[0.5em]">
+                <span class="text-white uppercase tracking-widest font-english block mb-4">FADI JAMAL • Digital Growth Specialist</span>
+                <span class="text-gold/40 tracking-[0.3em] uppercase block">Verified Meta Partner • Dubai / Emirates Ready</span>
+                <p class="mt-10 opacity-30 text-[8px]">© 2026 جميع الحقوق محفوظة لفادي جمال</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
