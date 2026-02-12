@@ -32,16 +32,16 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/90 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex justify-between items-center transition-all duration-300">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#D4AF37] to-[#F3E5AB] p-[2px] shadow-[0_0_15px_rgba(212,175,55,0.3)]">
-                <div class="w-full h-full rounded-full bg-[#0A0A0A] flex items-center justify-center overflow-hidden">
-                    <!-- اللوجو المصغر -->
-                    <img src="logo.png" alt="Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                    <i data-lucide="user" class="text-[#D4AF37] w-5 h-5 hidden"></i>
+            <!-- تم إزالة الكلاسات الدائرية والبوردر -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <div class="w-full h-full flex items-center justify-center">
+                    <!-- اللوجو المصغر (بدون دائرة) -->
+                    <img src="logo.png" alt="Logo" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <i data-lucide="user" class="text-[#D4AF37] w-6 h-6 hidden"></i>
                 </div>
             </div>
             <div>
-                <!-- تم إضافة dir="ltr" هنا لضبط ترتيب الاسم الإنجليزي -->
-                <span class="font-english font-black text-xl tracking-tighter block leading-none uppercase" dir="ltr">FADI <span class="text-gold">JAMAL</span></span>
+                <span class="font-english font-black text-xl tracking-tighter block leading-none uppercase">FADI <span class="text-gold">JAMAL</span></span>
                 <span class="text-[9px] text-gray-500 tracking-[0.2em] font-bold uppercase">مستشار تسويق ونمو رقمي</span>
             </div>
         </div>
@@ -68,8 +68,7 @@
                     <i data-lucide="badge-check" class="w-4 h-4 text-gold fill-gold"></i>
                     <span class="text-gold text-[10px] font-black uppercase tracking-widest">شريك رسمي لميتا - Meta Partner</span>
                 </div>
-                
-                <!-- Headline with Facebook Verification Badge (LTR forced for correct name order) -->
+                <!-- Headline with Facebook Verification Badge -->
                 <div class="flex items-center justify-end gap-3 flex-wrap mb-6" dir="ltr">
                     <!-- أيقونة التوثيق الزرقاء -->
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -300,8 +299,8 @@
         <div class="max-w-5xl mx-auto text-white">
             <div class="w-36 h-36 rounded-full bg-gradient-to-tr from-gold to-white p-[3px] mx-auto mb-16 shadow-[0_0_80px_rgba(212,175,55,0.4)]">
                 <div class="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
-                    <!-- مكان اللوجو الكبير تحت -->
-                    <img src="logo.png" alt="Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <!-- مكان اللوجو الكبير تحت (بدون دائرة) -->
+                    <img src="logo.png" alt="Logo" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                     <i data-lucide="user" class="text-gold w-16 h-14 opacity-20 hidden"></i>
                 </div>
             </div>
