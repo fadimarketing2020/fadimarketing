@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
     
-    <!-- Icons Library -->
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -21,7 +21,6 @@
         .font-english { font-family: 'Montserrat', sans-serif; }
         .text-gold { color: #D4AF37; }
         .bg-gold { background-color: #D4AF37; }
-        .border-gold { border-color: #D4AF37; }
         .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.3s ease; }
         .glass-panel:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-5px); }
         .insta-gradient { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
@@ -32,9 +31,10 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/90 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex justify-between items-center transition-all duration-300">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#D4AF37] to-[#F3E5AB] p-[2px] shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#D4AF37] to-[#F3E5AB] p-[2px]">
                 <div class="w-full h-full rounded-full bg-[#0A0A0A] flex items-center justify-center overflow-hidden">
-                    <i data-lucide="user" class="text-[#D4AF37] w-5 h-5"></i>
+                    <img src="logo.png" alt="Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <i data-lucide="user" class="text-[#D4AF37] w-5 h-5 hidden"></i>
                 </div>
             </div>
             <div>
@@ -42,31 +42,38 @@
                 <span class="text-[9px] text-gray-500 tracking-[0.2em] font-bold uppercase">مستشار تسويق ونمو رقمي</span>
             </div>
         </div>
-        <div class="hidden md:flex gap-8 text-[11px] font-bold text-gray-400">
+        <div class="hidden md:flex items-center gap-8 text-[11px] font-bold text-gray-400">
             <a href="#about" class="hover:text-gold transition-colors">عني</a>
             <a href="#services" class="hover:text-gold transition-colors">الخدمات</a>
-            <a href="#work" class="hover:text-gold transition-colors">سابقة الأعمال</a>
+            <a href="#work" class="hover:text-gold transition-colors">شركاء النجاح</a>
             <a href="#contact" class="hover:text-gold transition-colors">تواصل</a>
+            <!-- Language Switcher -->
+            <a href="index_en.html" class="flex items-center gap-1 text-white bg-white/10 px-3 py-1 rounded-full hover:bg-gold hover:text-black transition-all">
+                <span class="font-english tracking-widest">EN</span>
+                <i data-lucide="globe" class="w-3 h-3"></i>
+            </a>
         </div>
-        <a href="https://wa.me/201040118000" target="_blank" class="bg-gold text-black px-5 py-2 rounded-full text-xs font-bold hover:scale-105 transition-transform shadow-lg shadow-yellow-900/20">
-            تواصل معي
-        </a>
+        <div class="flex items-center gap-4">
+             <a href="index_en.html" class="md:hidden text-white font-bold font-english text-xs border border-white/20 px-2 py-1 rounded hover:border-gold hover:text-gold transition-all">EN</a>
+            <a href="https://wa.me/201040118000" target="_blank" class="bg-gold text-black px-5 py-2 rounded-full text-xs font-bold hover:scale-105 transition-transform shadow-lg shadow-yellow-900/20">
+                تواصل معي
+            </a>
+        </div>
     </nav>
 
-    <!-- Hero Section (Side-by-Side Layout) -->
+    <!-- Hero Section -->
     <section class="relative pt-44 pb-24 px-6 min-h-screen flex items-center overflow-hidden">
         <div class="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-gold/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
-        
         <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center w-full">
-            
-            <!-- Text Content -->
             <div class="md:col-span-7 lg:col-span-8 text-right order-2 md:order-1">
-                <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 px-4 py-2 rounded-full mb-6">
+                <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 px-4 py-2 rounded-full mb-6 text-white">
                     <i data-lucide="badge-check" class="w-4 h-4 text-gold fill-gold"></i>
-                    <span class="text-gold text-[10px] font-black uppercase tracking-widest text-white">شريك رسمي لميتا - Meta Partner</span>
+                    <span class="text-gold text-[10px] font-black uppercase tracking-widest">شريك رسمي لميتا - Meta Partner</span>
                 </div>
-                <h1 class="font-english text-5xl md:text-8xl font-black mb-6 leading-[0.9] tracking-tight text-white uppercase">
-                    FADI <span class="bg-clip-text text-transparent bg-gradient-to-l from-yellow-400 via-yellow-200 to-white italic">JAMAL</span>
+                <h1 class="font-english text-5xl md:text-8xl font-black mb-6 leading-[0.9] tracking-tight text-white uppercase flex items-center justify-end gap-3 flex-wrap">
+                    <span>FADI</span> 
+                    <span class="bg-clip-text text-transparent bg-gradient-to-l from-yellow-400 via-yellow-200 to-white italic">JAMAL</span>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.565 8.617C16.84 8.86 16.864 9.279 16.621 9.554L11.085 15.804C10.957 15.949 10.772 16.031 10.578 16.031C10.384 16.031 10.199 15.949 10.071 15.804L6.942 12.273C6.699 11.998 6.723 11.579 6.998 11.336C7.273 11.093 7.692 11.117 7.935 11.392L10.578 14.374L15.628 8.673C15.871 8.398 16.29 8.374 16.565 8.617Z" fill="white"/></svg>
                 </h1>
                 
                 <div class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl leading-relaxed font-medium space-y-4">
@@ -76,21 +83,20 @@
 
                 <div class="flex flex-wrap gap-4 justify-end">
                     <div class="glass-panel px-6 py-4 rounded-[2rem] flex items-center gap-4 border border-gold/20">
-                        <div class="text-right">
-                            <div class="text-2xl font-black text-gold leading-none mb-1 uppercase font-english tracking-tighter">Direct Support</div>
-                            <div class="text-[9px] text-gray-500 uppercase font-bold tracking-widest">Meta Partner Edge</div>
-                        </div>
+                        <div class="text-right"><div class="text-2xl font-black text-gold">Direct Support</div><div class="text-[9px] text-gray-500 uppercase font-bold">Meta Partner Edge</div></div>
                         <i data-lucide="headphones" class="text-gold w-6 h-6"></i>
+                    </div>
+                    <div class="glass-panel px-6 py-4 rounded-[2rem] flex items-center gap-4">
+                        <div class="text-right"><div class="text-2xl font-black text-gold">Verified</div><div class="text-[9px] text-gray-500 uppercase font-bold">Global Expert</div></div>
+                        <i data-lucide="badge-check" class="text-gold w-6 h-6"></i>
                     </div>
                 </div>
             </div>
             
-            <!-- Profile Image Area -->
             <div class="md:col-span-5 lg:col-span-4 relative order-1 md:order-2">
                 <div class="relative aspect-square max-w-[420px] mx-auto">
                     <div class="absolute inset-0 bg-gold rounded-[50px] blur-3xl opacity-10"></div>
                     <div class="relative w-full h-full rounded-[50px] bg-[#111] border-2 border-gold/30 overflow-hidden shadow-2xl transform lg:-rotate-3 hover:rotate-0 transition-all duration-700">
-                        <!-- Replace with your actual photo me.jpg -->
                         <img src="me.jpg" alt="Fadi Jamal" class="w-full h-full object-cover opacity-90" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                         <div class="hidden flex-col items-center justify-center h-full bg-[#151515]">
                             <i data-lucide="user" class="w-20 h-20 text-gray-800 mb-2"></i>
@@ -98,7 +104,10 @@
                         </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                         <div class="absolute bottom-6 right-6 text-right">
-                            <h4 class="text-2xl font-english font-black text-white uppercase tracking-widest leading-none">FADI JAMAL</h4>
+                            <h4 class="text-2xl font-english font-black text-white uppercase tracking-widest leading-none flex items-center justify-end gap-2">
+                                FADI JAMAL
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.565 8.617C16.84 8.86 16.864 9.279 16.621 9.554L11.085 15.804C10.957 15.949 10.772 16.031 10.578 16.031C10.384 16.031 10.199 15.949 10.071 15.804L6.942 12.273C6.699 11.998 6.723 11.579 6.998 11.336C7.273 11.093 7.692 11.117 7.935 11.392L10.578 14.374L15.628 8.673C15.871 8.398 16.29 8.374 16.565 8.617Z" fill="white"/></svg>
+                            </h4>
                             <p class="text-gold font-bold text-[10px] uppercase flex items-center gap-1 justify-end mt-2">
                                 Meta Partner <i data-lucide="badge-check" class="w-3 h-3 fill-gold text-black"></i>
                             </p>
@@ -113,7 +122,7 @@
     <section id="about" class="py-24 px-6 bg-black text-center border-t border-white/5 relative">
         <div class="max-w-4xl mx-auto">
             <h3 class="text-gold font-bold tracking-[0.4em] uppercase mb-10 text-[11px] italic">الرؤية المهنية | Vision</h3>
-            <p class="text-2xl md:text-4xl font-bold leading-relaxed text-gray-200">
+            <p class="text-base md:text-xl font-bold leading-relaxed text-gray-300">
                 "رؤيتي تتجاوز مجرد إدارة الحملات؛ أنا هنا لأكون شريك النمو الأول لعلامتك التجارية. أدمج بين الحلول التقنية المتقدمة كشريك لميتا وبين استراتيجيات التسويق المبتكرة لضمان استقرار أعمالك وتحقيق أعلى عائد استثمار ممكن."
             </p>
             <div class="h-[1px] w-48 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-16 opacity-30"></div>
@@ -162,72 +171,103 @@
         </div>
     </section>
 
-    <!-- Portfolio Section (10 Projects with Icons) -->
+    <!-- Portfolio Section (شركاء النجاح المستمر - بتدرج لوني) -->
     <section id="work" class="py-32 px-6 bg-black">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-24">
                 <h3 class="text-gold font-bold mb-4 tracking-widest uppercase text-[11px]">شراكات نجاح عالمية</h3>
-                <h2 class="text-5xl md:text-7xl font-black underline decoration-gold underline-offset-[20px] text-white uppercase tracking-tighter">سابقة الأعمال</h2>
+                <!-- تم تصغير الخط وعمل تدرج لوني -->
+                <h2 class="text-3xl md:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-l from-yellow-400 via-yellow-200 to-white uppercase tracking-tighter">شركاء النجاح المستمر</h2>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Lovly Yacht -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="anchor" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 1: Lovly Yacht -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/lovly.png" alt="Lovly Yacht" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="anchor" class="w-10 h-10 text-gold hidden"></i> 
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase tracking-wider">Lovly Yacht</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إدارة ميديا باير وتطوير التواجد الرقمي <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- H Bella Clinic -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="sparkles" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 2: H Bella -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/hbella.png" alt="H Bella" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="sparkles" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">H Bella Clinic</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">زيادة الحجوزات وتطوير الهوية البصرية <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Speed Law -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="scale" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 3: Speed Law -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/speedlaw.png" alt="Speed Law" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="scale" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Speed Law</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">توثيق الحسابات وبناء المصداقية الرقمية <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- El Masria Foods -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="utensils" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 4: El Masria -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/elmasria.png" alt="El Masria" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="utensils" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">El Masria Foods</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">تصدر نتائج بحث جوجل مابس وإدارة المراجعات <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Mariam Clinic -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="stethoscope" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 5: Mariam -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/mariam.png" alt="Mariam Clinic" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="stethoscope" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Mariam Clinic</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">صناعة محتوى تفاعلي وإدارة منصات التواصل <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Sara Salim Dress -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="scissors" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 6: Sara Salim -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/sara.png" alt="Sara Salim" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="scissors" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Sara Salim Dress</h4>
-                    <p class="text-gray-400 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إخراج فيديوهات ريلز وحملات ترويجية ناجحة <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
+                    <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إخراج فيديوهات ريلز وحملات ترويجية ناجحة <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Mountain View -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="building-2" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 7: Mountain View -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/mountain.png" alt="Mountain View" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="building-2" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Mountain View</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">حملات Lead Generation وتصدر نتائج البحث <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Buffalo Burger -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="utensils-crossed" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 8: Buffalo -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/buffalo.png" alt="Buffalo Burger" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="utensils-crossed" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Buffalo Burger</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إدارة حملات سوشيال ميديا وزيادة المبيعات <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Town Team -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="shopping-bag" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 9: Town Team -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/townteam.png" alt="Town Team" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="shopping-bag" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Town Team</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">إنتاج محتوى إعلاني وتحقيق مبيعات أونلاين <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
-                <!-- Raya Corp -->
-                <div class="glass-panel p-10 rounded-[3.5rem] text-right group">
-                    <i data-lucide="cpu" class="w-8 h-8 text-gold mb-6"></i>
+                <!-- 10: Raya -->
+                <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
+                    <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
+                        <img src="brands/raya.png" alt="Raya Corp" class="w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <i data-lucide="cpu" class="w-10 h-10 text-gold hidden"></i>
+                    </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Raya Corp</h4>
                     <p class="text-gray-500 text-sm font-bold opacity-80 flex items-center justify-end gap-2">توثيق الهوية الرقمية وحلول تقنية للشركات <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i></p>
                 </div>
@@ -238,10 +278,12 @@
     <!-- Footer -->
     <footer id="contact" class="py-44 px-6 bg-black text-center relative overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gold/5 blur-[250px] -z-10"></div>
-        <div class="max-w-4xl mx-auto text-white">
+        <div class="max-w-5xl mx-auto text-white">
             <div class="w-36 h-36 rounded-full bg-gradient-to-tr from-gold to-white p-[3px] mx-auto mb-16 shadow-[0_0_80px_rgba(212,175,55,0.4)]">
                 <div class="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
-                    <i data-lucide="user" class="text-gold w-16 h-14 opacity-20"></i>
+                    <!-- مكان اللوجو الكبير تحت -->
+                    <img src="logo.png" alt="Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <i data-lucide="user" class="text-gold w-16 h-14 opacity-20 hidden"></i>
                 </div>
             </div>
             
@@ -252,16 +294,23 @@
                     <i data-lucide="phone" class="w-7 h-7"></i>
                 </a>
                 
-                <!-- Facebook - Official Blue -->
-                <a href="https://facebook.com/fadi.premium.media" target="_blank" class="group flex items-center gap-4 bg-[#1877F2] text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-blue-900/20">
+                <!-- Facebook - Official Blue with Verification Badge -->
+                <a href="https://facebook.com/fadi.premium.media" target="_blank" class="group flex items-center gap-4 bg-[#1877F2] text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-blue-900/20 relative">
                     <span>Facebook</span>
                     <i data-lucide="facebook" class="w-7 h-7"></i>
+                    <svg class="absolute -top-2 -right-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.565 8.617C16.84 8.86 16.864 9.279 16.621 9.554L11.085 15.804C10.957 15.949 10.772 16.031 10.578 16.031C10.384 16.031 10.199 15.949 10.071 15.804L6.942 12.273C6.699 11.998 6.723 11.579 6.998 11.336C7.273 11.093 7.692 11.117 7.935 11.392L10.578 14.374L15.628 8.673C15.871 8.398 16.29 8.374 16.565 8.617Z" fill="white"/>
+                    </svg>
                 </a>
 
-                <!-- Instagram - Official Gradient -->
-                <a href="https://www.instagram.com/fadipremium" target="_blank" class="group flex items-center gap-4 insta-gradient text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-pink-900/20">
+                <!-- Instagram with Official Verification Badge -->
+                <a href="https://www.instagram.com/fadipremium" target="_blank" class="group flex items-center gap-4 insta-gradient text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-pink-900/20 relative">
                     <span>Instagram</span>
                     <i data-lucide="instagram" class="w-7 h-7"></i>
+                    <svg class="absolute -top-2 -right-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.565 8.617C16.84 8.86 16.864 9.279 16.621 9.554L11.085 15.804C10.957 15.949 10.772 16.031 10.578 16.031C10.384 16.031 10.199 15.949 10.071 15.804L6.942 12.273C6.699 11.998 6.723 11.579 6.998 11.336C7.273 11.093 7.692 11.117 7.935 11.392L10.578 14.374L15.628 8.673C15.871 8.398 16.29 8.374 16.565 8.617Z" fill="white"/>
+                    </svg>
                 </a>
             </div>
 
