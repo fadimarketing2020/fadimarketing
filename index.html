@@ -11,7 +11,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Fonts -->
+    <!-- Fonts (Cairo + Montserrat + Signature Font) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Montserrat:wght@400;600;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -28,8 +28,6 @@
         .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.3s ease; }
         .glass-panel:hover { border-color: rgba(212, 175, 55, 0.3); transform: translateY(-5px); }
         .insta-gradient { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
-        
-        /* تنسيق صور المنصات لتكون كبيرة وواضحة */
         .platform-box {
             width: 120px;
             height: 120px;
@@ -40,6 +38,7 @@
             border-radius: 20px;
             padding: 15px;
             transition: transform 0.3s ease;
+            overflow: hidden;
         }
         .platform-box:hover {
             transform: scale(1.1);
@@ -62,7 +61,7 @@
                 <i data-lucide="user" class="text-[#D4AF37] w-6 h-6 hidden"></i>
             </div>
             <div>
-                <span class="font-english font-black text-xl tracking-tighter block leading-none uppercase" dir="ltr">FADI <span class="text-gold">JAMAL</span></span>
+                <span class="font-english font-black text-xl tracking-tighter block leading-none uppercase">FADI <span class="text-gold">JAMAL</span></span>
                 <span class="text-[9px] text-gray-500 tracking-[0.2em] font-bold uppercase">مستشار تسويق ونمو رقمي</span>
             </div>
         </div>
@@ -127,6 +126,7 @@
                 </div>
             </div>
             
+            <!-- Profile Image Area -->
             <div class="md:col-span-5 lg:col-span-4 relative order-1 md:order-2">
                 <div class="relative aspect-square max-w-[420px] mx-auto">
                     <div class="absolute inset-0 bg-gold rounded-[50px] blur-3xl opacity-10"></div>
@@ -139,8 +139,12 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                         <div class="absolute bottom-6 right-6 text-right">
                             <div class="flex items-center justify-end gap-2" dir="ltr">
-                                <h4 class="text-2xl font-english font-black text-white uppercase tracking-widest leading-none">FADI JAMAL</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/>
+                                <h4 class="text-2xl font-english font-black text-white uppercase tracking-widest leading-none">
+                                    FADI JAMAL
+                                </h4>
+                                <!-- Blue Badge Small -->
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.565 8.617C16.84 8.86 16.864 9.279 16.621 9.554L11.085 15.804C10.957 15.949 10.772 16.031 10.578 16.031C10.384 16.031 10.199 15.949 10.071 15.804L6.942 12.273C6.699 11.998 6.723 11.579 6.998 11.336C7.273 11.093 7.692 11.117 7.935 11.392L10.578 14.374L15.628 8.673C15.871 8.398 16.29 8.374 16.565 8.617Z" fill="white"/>
                                 </svg>
                             </div>
@@ -167,18 +171,18 @@
     
     <!-- Platforms Section (اللوجوهات فقط) -->
     <section id="platforms" class="py-16 border-y border-white/5 bg-white/[0.01]">
-        <div class="max-w-5xl mx-auto px-6 text-center">
+        <div class="max-w-7xl mx-auto px-6 text-center">
             <p class="text-gray-500 text-[10px] font-bold tracking-[0.3em] mb-10 uppercase">PLATFORMS I MASTER</p>
-            <div class="flex flex-wrap justify-center gap-12 md:gap-20 items-center">
+            <div class="flex flex-wrap justify-center gap-10 md:gap-16 items-center">
                 <!-- Facebook -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <svg viewBox="0 0 48 48" width="100%" height="100%">
                          <circle cx="24" cy="24" r="24" fill="#1877F2"/>
                          <path d="M26.5 36V22h4.5l0.7-5h-5.2v-3.2c0-1.4 0.4-2.4 2.4-2.4h2.6V7c-0.4 0-2-0.2-3.8-0.2c-3.8 0-6.4 2.3-6.4 6.6V17h-4.3v5h4.3v14H26.5z" fill="white"/>
                     </svg>
                 </div>
                 <!-- Instagram -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <svg viewBox="0 0 256 256" width="100%" height="100%">
                         <defs><radialGradient id="rg1" r="150%" cx="30%" cy="107%"><stop stop-color="#fdf497" offset="0" /><stop stop-color="#fdf497" offset="0.05" /><stop stop-color="#fd5949" offset="0.45" /><stop stop-color="#d6249f" offset="0.6" /><stop stop-color="#285AEB" offset="0.9" /></radialGradient></defs>
                         <rect width="256" height="256" rx="60" fill="url(#rg1)"/>
@@ -187,25 +191,25 @@
                     </svg>
                 </div>
                 <!-- Google Ads -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <img src="Google-Ads-Logo-PNG.png" alt="Google Ads" class="w-full h-full object-contain">
                 </div>
                 <!-- Google Maps -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <img src="OIPjpg.jfif" alt="Google Maps" class="w-full h-full object-contain">
                 </div>
                 <!-- Snapchat -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <img src="t_500x300.jpg" alt="Snapchat" class="w-full h-full object-contain rounded-2xl">
                 </div>
                 <!-- TikTok (SVG Original - White on Black) -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-black border border-white/20 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-black border border-white/20 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <svg viewBox="0 0 24 24" width="100%" height="100%" fill="white">
                         <path d="M12.525.02c1.31-.02 2.61-.01 3.918.02.08.18.05.42.05.606.003 4.156 3.022 7.854 7.218 8.446.06.01.21.03.18.15.03.88.02 1.77.03 2.65-.58.05-1.21.02-1.78.11-1.92.3-3.61 1.43-4.7 3.12v8.32c-.08 6.22-8.54 8.79-11.59 4.36-2.5-3.64.44-8.86 4.95-8.32v4.06c-1.48-.12-2.65 1.54-1.95 2.92.76 1.49 3.32 1.34 3.36-.61v-15.6c-2.48 2.06-6.42 2.01-8.62-.9-1.9-2.54-.42-6.57 2.86-7.31v3.96c-1.12.2-2.02 1.4-1.43 2.51.65 1.23 2.91 1.04 2.98-.63V.02Z"/>
                     </svg>
                 </div>
-                <!-- LinkedIn (SVG Original) -->
-                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform">
+                <!-- LinkedIn -->
+                <div class="platform-box w-28 h-28 flex items-center justify-center bg-white/5 rounded-3xl p-4 hover:scale-110 transition-transform cursor-pointer">
                     <svg viewBox="0 0 24 24" width="100%" height="100%" fill="none">
                         <rect x="0" y="0" width="24" height="24" rx="4" fill="#0077B5"/>
                         <path d="M5 6.5C5 7.32843 5.67157 8 6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5ZM5 19H8V10H5V19ZM10 19H13V13.5C13 11.5 16 11.2 16 13.5V19H19V12.5C19 9 15 9.1 13.5 11.2V10H10V19Z" fill="white"/>
@@ -270,7 +274,7 @@
                 <!-- 1: Lovly Yacht -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/1.jpg" alt="Lovly Yacht" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="1.jpg" alt="Lovly Yacht" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="anchor" class="w-10 h-10 text-gold hidden"></i> 
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase tracking-wider">Lovly Yacht</h4>
@@ -279,7 +283,7 @@
                 <!-- 2: H Bella -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/2.jpg" alt="H Bella" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="2.jpg" alt="H Bella" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="sparkles" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">H Bella Clinic</h4>
@@ -288,7 +292,7 @@
                 <!-- 3: Speed Law -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/3.jpg" alt="Speed Law" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="3.jpg" alt="Speed Law" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="scale" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Speed Law</h4>
@@ -297,7 +301,7 @@
                 <!-- 4: El Masria -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/4.jpg" alt="El Masria" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="4.jpg" alt="El Masria" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="utensils" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">El Masria Foods</h4>
@@ -306,7 +310,7 @@
                 <!-- 5: Mariam -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/5.jpg" alt="Mariam Clinic" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="5.jpg" alt="Mariam Clinic" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="stethoscope" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Mariam Clinic</h4>
@@ -315,7 +319,7 @@
                 <!-- 6: Sara Salim -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/6.jpg" alt="Sara Salim" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="6.jpg" alt="Sara Salim" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="scissors" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase">Sara Salim Dress</h4>
@@ -324,7 +328,7 @@
                 <!-- 7: Mountain View -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/7.jpg" alt="Mountain View" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="7.jpg" alt="Mountain View" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="building-2" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Mountain View</h4>
@@ -333,7 +337,7 @@
                 <!-- 8: Buffalo -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/8.jpg" alt="Buffalo Burger" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="8.jpg" alt="Buffalo Burger" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="utensils-crossed" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Buffalo Burger</h4>
@@ -342,7 +346,7 @@
                 <!-- 9: Town Team -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/9.jpg" alt="Town Team" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="9.jpg" alt="Town Team" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="shopping-bag" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Town Team</h4>
@@ -351,7 +355,7 @@
                 <!-- 10: Raya -->
                 <div class="glass-panel p-8 rounded-[3.5rem] text-right group hover:bg-gold/5 transition-colors">
                     <div class="w-24 h-24 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 overflow-hidden">
-                        <img src="brands/10.jpg" alt="Raya Corp" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="10.jpg" alt="Raya Corp" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <i data-lucide="cpu" class="w-10 h-10 text-gold hidden"></i>
                     </div>
                     <h4 class="text-2xl font-english font-black text-white mb-3 uppercase italic">Raya Corp</h4>
@@ -395,7 +399,7 @@
                 <a href="https://www.instagram.com/fadipremium" target="_blank" class="group flex items-center gap-4 insta-gradient text-white px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-xl shadow-pink-900/20 relative">
                     <span>Instagram</span>
                     <i data-lucide="instagram" class="w-7 h-7"></i>
-                    <!-- Blue Badge Small for Footer (Same as FB for consistency) -->
+                    <!-- Blue Badge Small for Footer -->
                     <svg class="absolute -top-2 -right-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.5 12.5C22.5 12.162 22.394 11.838 22.204 11.566L21.368 10.33C21.134 9.986 21.052 9.562 21.141 9.155L21.464 7.674C21.536 7.34 21.492 6.993 21.341 6.693C21.19 6.393 20.942 6.155 20.641 6.02L19.297 5.41C18.916 5.237 18.618 4.939 18.445 4.558L17.835 3.214C17.7 2.913 17.462 2.665 17.162 2.514C16.862 2.363 16.515 2.319 16.181 2.391L14.7 2.714C14.293 2.803 13.869 2.721 13.525 2.487L12.289 1.651C12.017 1.461 11.693 1.355 11.355 1.355C11.017 1.355 10.693 1.461 10.421 1.651L9.185 2.487C8.841 2.721 8.417 2.803 8.01 2.714L6.529 2.391C6.195 2.319 5.848 2.363 5.548 2.514C5.248 2.665 5.01 2.913 4.875 3.214L4.265 4.558C4.092 4.939 3.794 5.237 3.413 5.41L2.069 6.02C1.768 6.155 1.614 6.393 1.369 6.693C1.218 6.993 1.174 7.34 1.246 7.674L1.569 9.155C1.658 9.562 1.576 9.986 1.342 10.33L0.506 11.566C0.316 11.838 0.21 12.162 0.21 12.5C0.21 12.838 0.316 13.162 0.506 13.434L1.342 14.67C1.576 15.014 1.658 15.438 1.569 15.845L1.246 17.326C1.174 17.66 1.218 18.007 1.369 18.307C1.52 18.607 1.768 18.845 2.069 18.98L3.413 19.59C3.794 19.763 4.092 20.061 4.265 20.442L4.875 21.786C5.01 22.087 5.248 22.335 5.548 22.514C5.848 22.665 6.195 22.709 6.529 22.637L8.01 22.314C8.417 22.225 8.841 22.307 9.185 22.541L10.421 23.377C10.693 23.567 11.017 23.673 11.355 23.673C11.693 23.673 12.017 23.567 12.289 23.377L13.525 22.541C13.869 22.307 14.293 22.225 14.7 22.314L16.181 22.637C16.515 22.709 16.862 22.665 17.162 22.514C17.462 22.335 17.7 22.087 17.835 21.786L18.445 20.442C18.618 20.061 18.916 19.763 19.297 19.59L20.641 18.98C20.942 18.845 21.19 18.607 21.341 18.307C21.492 18.007 21.536 17.66 21.464 17.326L21.141 15.845C21.052 15.438 21.134 15.014 21.368 14.67L22.204 13.434C22.394 13.162 22.5 12.838 22.5 12.5Z" fill="#1877F2"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.565 8.617C16.84 8.86 16.864 9.279 16.621 9.554L11.085 15.804C10.957 15.949 10.772 16.031 10.578 16.031C10.384 16.031 10.199 15.949 10.071 15.804L6.942 12.273C6.699 11.998 6.723 11.579 6.998 11.336C7.273 11.093 7.692 11.117 7.935 11.392L10.578 14.374L15.628 8.673C15.871 8.398 16.29 8.374 16.565 8.617Z" fill="white"/>
@@ -422,4 +426,8 @@
         lucide.createIcons();
     </script>
 </body>
-</html>
+</html>     </div>
+        </div>
+    </footer>
+>
+
